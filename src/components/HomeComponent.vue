@@ -5,8 +5,8 @@
     </v-form>
     <div class="pills">
       <PillComponent
-        v-for="word in groupedWords"
-        :key="word.name"
+        v-for="(word, i) in groupedWords"
+        :key="i"
         :name="word.name"
         :amount="word.amount"
       />
@@ -34,7 +34,6 @@ export default {
       ipcRenderer.send('process-subtitles', paths)
       ipcRenderer.on('process-subtitles', (event, response) => {
         this.groupedWords = response
-        
       })
     },
   },
