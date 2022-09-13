@@ -1,4 +1,4 @@
-# Counter of most used words in srt subtitle files, using Electron.js, Vue.js and Vuetify.js. #
+# Counter of most used words in SRT subtitle files, using Electron.js, Vue.js and Vuetify.js. #
 # vue-most-used-words
 
 ## Project setup
